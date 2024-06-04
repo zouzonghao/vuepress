@@ -1,6 +1,7 @@
 ---
 title: 布局
 icon: object-group
+date: 2020-01-01
 order: 2
 category:
   - 指南

@@ -1,28 +1,33 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/logs/": "structure",
+  // "/logs/2024/": "structure",
+  // "/posts/linux/": "structure",
+  // "/posts/mac/": "structure",
   "/": [
     "",
     {
-      text: "日志",
+      text: "归档",
       icon: "book",
       prefix: "logs/",
       //可点击
       link: "logs/",
       children: "structure",
+      expanded: true,
+      collapsible: false
     },
-    {
-      text: "文章",
-      icon: "book",
-      prefix: "posts/",
-      children: "structure",
-    },
-    "intro",
-    {
-      text: "幻灯片",
-      icon: "person-chalkboard",
-      link: "https://plugin-md-enhance.vuejs.press/zh/guide/content/revealjs/demo.html",
-    },
+    // {
+    //   text: "文章",
+    //   icon: "book",
+    //   prefix: "posts/",
+    //   link: "posts/",
+    //   children: "structure",
+    // },
+    // "intro",
+    // {
+    //   text: "幻灯片",
+    //   icon: "person-chalkboard",
+    //   link: "https://plugin-md-enhance.vuejs.press/zh/guide/content/revealjs/demo.html",
+    // },
   ],
 });

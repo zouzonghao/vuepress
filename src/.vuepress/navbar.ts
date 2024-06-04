@@ -3,48 +3,52 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/logs/",
-  // "/demo/",
-  // {
-  //   text: "博文",
-  //   icon: "pen-to-square",
-  //   prefix: "/posts/",
-  //   children: [
-  //     {
-  //       text: "苹果",
-  //       icon: "pen-to-square",
-  //       prefix: "apple/",
-  //       children: [
-  //         { text: "苹果1", icon: "pen-to-square", link: "1" },
-  //         { text: "苹果2", icon: "pen-to-square", link: "2" },
-  //         "3",
-  //         "4",
-  //       ],
-  //     },
-  //     {
-  //       text: "香蕉",
-  //       icon: "pen-to-square",
-  //       prefix: "banana/",
-  //       children: [
-  //         {
-  //           text: "香蕉 1",
-  //           icon: "pen-to-square",
-  //           link: "1",
-  //         },
-  //         {
-  //           text: "香蕉 2",
-  //           icon: "pen-to-square",
-  //           link: "2",
-  //         },
-  //         "3",
-  //         "4",
-  //       ],
-  //     },
-  //     { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-  //     { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-  //     "tomato",
-  //     "strawberry",
-  //   ],
-  // },
+//  "/demo/",
+  {
+    text: "文章",
+    icon: "simple-icons:readdotcv",
+    link: "/article/"
+//    prefix: "/posts/",
+    // children: [
+    //   {
+    //     text: "Linux相关",
+    //     icon: "codicon:terminal-linux",
+    //     prefix: "linux/",
+    //     link: "linux/",
+    //     // children: "structure",
+    //     children: [
+    //       { 
+    //         text: "liunx学习", 
+    //         //icon: "pen-to-square", 
+    //         link: "linux" 
+    //       },
+    //       "vps",
+
+    //     ],
+    //   },
+    //   {
+    //     text: "Macx相关",
+    //     icon: "iconoir:apple-mac",
+    //     prefix: "mac/",
+    //     link: "mac/",
+    //     children: [
+    //       {
+    //         text: "mac经验",
+    //         //icon: "pen-to-square",
+    //         link: "mac",
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     text: "时间轴",
+    //     icon: "simple-line-icons:clock",
+    //     link: "/timeline/",
+    //     children: [
+
+    //     ],
+    //   },
+    // ],
+  },
   // {
   //   text: "V2 文档",
   //   icon: "book",
@@ -52,7 +56,12 @@ export default navbar([
   // },
   {
     text: "时间轴",
-    icon: "clock",
+    icon: "simple-line-icons:clock",
     link: "/timeline/",
+  },
+  {
+    text: "图标库",
+    icon: "material-symbols-light:shop-outline",
+    link: "https://icon-sets.iconify.design/",
   },
 ]);

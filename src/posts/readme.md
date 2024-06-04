@@ -1,7 +1,7 @@
 ---
-title: 归档
+title: 文章
 index: false
-icon: hugeicons:task-daily-01
+icon: simple-icons:readdotcv
 
 ---
 

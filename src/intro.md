@@ -1,8 +1,8 @@
 ---
 icon: circle-info
-cover: /assets/images/cover3.jpg
+//cover: /assets/images/cover3.jpg
 ---
 
 # 介绍页
 
-将你的个人介绍和档案放置在此处。
+生命不息，折腾不止
