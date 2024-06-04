@@ -2,7 +2,7 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   // "/logs/2024/": "structure",
-  // "/posts/linux/": "structure",
+  "/posts/": "structure",
   // "/posts/mac/": "structure",
   "/": [
     "",
