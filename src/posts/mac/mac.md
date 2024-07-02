@@ -1,4 +1,12 @@
-# mac
+---
+title: mac
+icon: linux
+date: 2024-05-29
+category:
+  - 计算机
+tag:
+  - mac
+---
 
 # 1、utool
 
