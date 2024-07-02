@@ -9,9 +9,9 @@ export default sidebar({
     {
       text: "归档",
       icon: "book",
-      prefix: "logs/",
+      prefix: "diary/",
       //可点击
-      link: "logs/",
+      link: "diary/",
       children: "structure",
       expanded: true,
       collapsible: false
