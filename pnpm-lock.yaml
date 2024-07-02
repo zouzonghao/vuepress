@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      shared-utils:
+        specifier: ^2.0.1
+        version: 2.0.1
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.12
@@ -840,6 +844,9 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  audio-utils@2.0.2:
+    resolution: {integrity: sha512-gPvZRIRntxY2ybakvRFZp7TeEDUUqL4rIPR7zGGFUjnYmaq2KzSxhDG3zbWYVzc1pBjBOwyM7MiKGdU+Mip5Aw==}
 
   autoprefixer@10.4.19:
     resolution: {integrity: sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==}
@@ -1683,6 +1690,9 @@ packages:
 
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
+
+  shared-utils@2.0.1:
+    resolution: {integrity: sha512-Vcs19dPxvGA7mQ5AuWqNuQl3YAPf+IbDajXOhiDYE1V5yQ9InxFKyrAUIwut/akGZlMV1zKP9nMgZB0pVwiUkg==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -2933,6 +2943,10 @@ snapshots:
 
   argparse@2.0.1: {}
 
+  audio-utils@2.0.2:
+    dependencies:
+      shared-utils: 2.0.1
+
   autoprefixer@10.4.19(postcss@8.4.38):
     dependencies:
       browserslist: 4.23.0
@@ -3808,6 +3822,10 @@ snapshots:
   semver@7.6.2: {}
 
   set-blocking@2.0.0: {}
+
+  shared-utils@2.0.1:
+    dependencies:
+      audio-utils: 2.0.2
 
   shebang-command@2.0.0:
     dependencies:

@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { viteBundler } from '@vuepress/bundler-vite'
+import { resolve } from 'path'
 
 export default defineUserConfig({
   base: "/",
