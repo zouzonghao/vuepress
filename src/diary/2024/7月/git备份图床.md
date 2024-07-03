@@ -21,10 +21,15 @@ ssh-keygen -t rsa -b 4096
 
 passphrase 为空即可
 
-### 1.2、将公钥
+### 1.2、在github官网上添加密钥
+上一步生成成功后，把 .ssh文件夹下的 id_rsa.pub 内容拷贝到 github  新建的 SSH keys 中
 
-## 1、github设置
+![](https://i.730307.xyz/202407040237022.avif)
 
+
+
+## 2、github连接
+电脑上终端运行:
 ```bash
 git init
  
@@ -32,6 +37,5 @@ git remote origin set-url git@github.com:sanqi730/images2.git
 #  git remote add main git@github.com:sanqi730/images2.git
 
 git clone git@github.com:sanqi730/images2.git
-
 ```
 
