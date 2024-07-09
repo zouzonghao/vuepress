@@ -22,3 +22,12 @@ tag:
 ```
 
 ^(?:\[日本AV\]|(?:\[.*?\]\s*)?(?:100(\.\d+)?|10[1-9]|[1-9][0-9]{2,}|[2-9]\d{3,})\sGB)
+
+
+<div class="hint-container tip">
+  <p class="hint-container-title">提示</p>
+  <p>链接扩展是由我们的内置插件支持的。</p>
+  <p>配置参考: 
+    <a href="https://vuejs.press/zh/reference/config.html#markdown-links" target="_blank" rel="noopener noreferrer">markdown.links</a>
+  </p>
+</div>
