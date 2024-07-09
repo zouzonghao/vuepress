@@ -1,5 +1,5 @@
 ---
-title: git备份图床
+title: 备份由 github 搭建的图床
 icon: file
 order: 3
 author: 三七
@@ -10,7 +10,8 @@ tag:
   - github
   - 图床
 ---
-
+git clone 到本地
+<!-- more --> 
 ## 1、**设置SSH密钥对**
 
 ### 1.1、终端运行，生成密钥对

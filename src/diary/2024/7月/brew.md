@@ -10,9 +10,11 @@ tag:
   - brew
 ---
 
-最近更新了最新版本的brew,  在执行brew 命令的时候默认会自动从 https://formulae.brew.sh/api/formula.jws.json 下载最新的JSON api文件, 速度禁止是不可忍受的慢.   安装brew install xxx也是出奇的慢, 解决方法就是设置国内的加速代理,  在系统环境变量里面增加2个配置项即可 HOMEBREW_BOTTLE_DOMAIN 和 HOMEBREW_API_DOMAIN,  设置方法如下:
+最近更新了最新版本的brew,  在执行brew 命令的时候默认会自动从 https://formulae.brew.sh/api/formula.jws.json 下载最新的JSON api文件, 速度禁止是不可忍受的慢. 安装brew install xxx也是出奇的慢
+<!-- more --> 
+ 解决方法就是设置国内的加速代理,  在系统环境变量里面增加2个配置项即可 HOMEBREW_BOTTLE_DOMAIN 和 HOMEBREW_API_DOMAIN,  设置方法如下:
 
-在macos的用户文件夹下的 ~/.bash_profile 文件增加以下配置:
+_在macos的用户文件夹下的 ~/.bash_profile 文件增加以下配置:_
 ```
 # brew安装镜像加速 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles

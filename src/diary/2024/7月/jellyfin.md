@@ -1,9 +1,32 @@
+---
+title: 安装 jellyfin 及 metatube 刮削插件
+icon: file
+order: 3
+author: 三七
+date: 2024-07-03
+category:
+  - 计算机
+tag:
+  - jellyfin
+  - 刮削
+---
+
+<!-- more --> 
+
+## 1. docker 部署 jellyfin
+```
 docker run -d --volume /home/zou/docker/jellyfin/config:/config --volume /home/zou/docker/jellyfin/cache:/cache --volume /media/zou/14t/download:/downlord --net=host --restart=always --device /dev/dri/renderD128:/dev/dri/renderD128 --device /dev/dri/card0:/dev/dri/card0 --name="jellyfin" jellyfin/jellyfin
+```
+## 2. 安装插件
 
-进入 Jellyfin 控制台 > 插件 > 存储库，点击添加 
+进入 Jellyfin 控制台 > 插件 > 存储库，点击添加
+``` 
 https://cdn.jsdelivr.net/gh/metatube-community/jellyfin-plugin-metatube@dist/manifest.json
+```
 
-
+## 3. 通过 koyeb 部署 metatube 服务端
+[https://metatube-community.github.io/deploy/koyeb/](https://metatube-community.github.io/deploy/koyeb/)
+## 4. 在VPS上部署
 ```yml
 version: "3"
 services:
