@@ -28,11 +28,12 @@ export default hopeTheme({
   // 页脚
   footer: "默认页脚",
   displayFooter: false,
-
+  
   // 博客相关
   blog: {
     description: "生命折腾不止",
     intro: "/intro.html",
+    excerptLength: 0,
     // medias: {
     //   Baidu: "https://example.com",
     //   BiliBili: "https://example.com",
