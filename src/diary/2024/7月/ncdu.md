@@ -1,5 +1,5 @@
 ---
-title: ncdu--磁盘空间分析工具
+title: 磁盘空间分析工具--ncdu
 icon: file
 order: 3
 author: 三七
@@ -9,6 +9,7 @@ category:
 tag:
   - ncdu
 ---
+<!-- more --> 
 ## 1. 安装
 ```
 apt-get install ncdu

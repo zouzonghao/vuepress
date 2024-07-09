@@ -1,5 +1,5 @@
 ---
-title: brew 加速
+title: macOS brew 加速
 icon: file
 order: 3
 author: 三七

@@ -10,7 +10,7 @@ tag:
   - samba
 ---
 
-[[toc]]
+<!-- more --> 
 ## 配置文件
 ```
 sudo nano /etc/samba/smb.conf
