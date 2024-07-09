@@ -1,5 +1,5 @@
 ---
-title: xseed修改种子
+title: 使用命令行工具 xseed 修改种子的 track 服务器
 icon: file
 order: 3
 author: 三七
@@ -11,6 +11,7 @@ tag:
 ---
 
 使用xseed工具修改种子文件的技术过程。文章从克隆GitHub仓库开始，通过环境配置、依赖安装到批量修改种子文件的命令行操作，为读者提供了一个完整的种子编辑解决方案，是PT（Private Tracker）用户和种子管理爱好者的实用指南。
+<!-- more --> 
 ```
 git clone https://github.com/whatbox/xseed  
 

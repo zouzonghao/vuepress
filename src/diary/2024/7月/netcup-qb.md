@@ -1,5 +1,5 @@
 ---
-title: netcup-qb
+title: 在 netcup 使用 docker 搭建 qbittorrent
 icon: file
 order: 3
 author: 三七
@@ -9,7 +9,7 @@ category:
 tag:
   - pt
 ---
-
+<!-- more --> 
 ```
 docker run -d \
   --name=qbittorrent \

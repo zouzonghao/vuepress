@@ -1,5 +1,5 @@
 ---
-title: linux_samba
+title: linux_Samba
 icon: file
 order: 3
 author: 三七

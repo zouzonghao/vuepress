@@ -1,5 +1,5 @@
 ---
-title: wifi
+title: 在 kali 虚拟机中 使用 Aircrack-ng 破解 wifi
 icon: file
 order: 3
 author: 三七
@@ -10,9 +10,8 @@ tag:
   - wifi
 ---
 
-[[toc]]
 详细演示了在Kali虚拟机中进行WiFi安全测试的步骤，包括关闭干扰服务、启动监听模式、扫描WiFi网络、捕获并保存握手包，以及使用deauth攻击获取数据包。文章以实用指南形式，为网络安全专业人士提供了WiFi渗透测试的基础操作
-
+<!-- more --> 
 
 ## 1. 关闭可能影响的服务
 ```

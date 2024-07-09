@@ -10,9 +10,8 @@ tag:
   - nginx
 ---
 
-[[toc]]
 本文分享了如何在Nginx中配置SSL证书以实现安全的HTTPS连接，适用于需要反向代理和加密通信的开发者。
-
+<!-- more --> 
 ```
 server {
 	listen 443 ssl http2;
