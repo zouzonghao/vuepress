@@ -1,5 +1,5 @@
 ---
-title: smb
+title: Linux 配置 smb 共享访问
 icon: file
 order: 3
 author: 三七
