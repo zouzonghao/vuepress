@@ -34,4 +34,11 @@ ffmpeg -i /Users/macm2/Documents/录屏/2024-07-03_21-18-00.mkv -c:v libaom-av1 
 ```
 ffmpeg -i 1.mp4 -c copy -f avif 1.avif
 ```
+## 5. 倍速4倍
 
+```
+ffmpeg -i /Users/macm2/Documents/录屏/2024-07-05_16-54-12.mp4 -filter:v "setpts=0.25*PTS" 2024-07-05_16-54-12-4s.mp4
+```
+```
+ffmpeg -i /Users/macm2/Documents/录屏/2024-07-05_16-54-12-4s.mp4 -s 0 -t 20 -c copy 2024-07-05_16-54-12-4s-y.mp4
+```
