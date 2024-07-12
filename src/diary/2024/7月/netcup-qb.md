@@ -11,7 +11,7 @@ tag:
 ---
 
 <!-- more --> 
-```dash {6-12}
+```dash {1,6-8}
 docker run -d \
   --name=qbittorrent \
   -e PUID=1000 \
@@ -26,7 +26,7 @@ docker run -d \
   -v /home/zzh/qb/download:/downloads \
   --restart unless-stopped \
   lscr.io/linuxserver/qbittorrent:latest
-  ```
+```
 ```
 docker run -d \
   --name=qbittorrent \
