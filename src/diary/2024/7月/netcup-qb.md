@@ -11,7 +11,7 @@ tag:
 ---
 
 <!-- more --> 
-```
+```dash {6-12}
 docker run -d \
   --name=qbittorrent \
   -e PUID=1000 \
