@@ -1,0 +1,20 @@
+---
+title: mac程序已损坏
+icon: file
+order: 3
+author: 三七
+date: 2024-07-16
+category:
+  - 计算机
+tag:
+  - amc
+---
+
+<!-- more --> 
+输入命令后, 将app拖动到终端
+```bash
+sudo xattr -d com.apple.quarantine 
+```
+```bash
+sudo xattr -d com.apple.quarantine /Applications/nPlayer.app
+```

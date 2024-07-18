@@ -1,0 +1,21 @@
+---
+title: 天翼云Windows2Debian
+icon: file
+order: 3
+author: 三七
+date: 2024-07-15
+category:
+  - 计算机
+tag:
+  - 天翼云
+---
+
+<!-- more --> 
+教程地址:
+https://blog.tanglu.me/dd/#%E5%A4%A9%E7%BF%BC%E4%BA%91-%E4%BA%91%E7%94%B5%E8%84%91
+
+脚本下载:
+https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat
+
+脚本运行:
+.\reinstall.bat debian 11 --ci

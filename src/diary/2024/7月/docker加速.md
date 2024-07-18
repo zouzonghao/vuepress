@@ -364,8 +364,14 @@ nano /etc/docker/daemon.json
 ```
 ```
 {
-  "registry-mirrors": ["https://你的域名"]
+  "registry-mirrors": ["https://docker.343700.xyz"]
 }
 ```
 ## 2. 使用方法
 docker pull 你的域名/linuxserver/transmission:latest
+docker run --restart=always --network host -d -v /etc/frp/frpc.ini:/etc/frp/frpc.ini --name frpc docker pull docker.343700.xyz/snowdreamtech/frpc
+
+## 3. docker 加速安装
+```bash
+sudo curl -fsSL https://github.com/tech-shrimp/docker_installer/releases/download/latest/linux.sh| bash -s docker --mirror Aliyun
+```
