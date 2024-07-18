@@ -12,5 +12,5 @@ tag:
 
 <!-- more --> 
 ::: details mp4_to_10s_avif
-<!-- @include: ../-->
+<!-- @include: ../tools/mp4_to_10s_avif.py -->
 :::
