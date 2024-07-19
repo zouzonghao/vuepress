@@ -8,6 +8,9 @@ tag:
   - linux
 ---
 
+
+<!-- more --> 
+
 # linux
 
 ## 1、Windows上ssh密钥改变
