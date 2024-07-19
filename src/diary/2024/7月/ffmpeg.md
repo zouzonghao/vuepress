@@ -43,6 +43,13 @@ ffmpeg -i /Users/macm2/Documents/录屏/2024-07-05_16-54-12.mp4 -filter:v "setpt
 ```
 ffmpeg -i /Users/macm2/Documents/录屏/2024-07-05_16-54-12-4s.mp4 -s 0 -t 20 -c copy 2024-07-05_16-54-12-4s-y.mp4
 ```
+## 6. 查询支持的编码器
+```
+ffmpeg -encoders
+ # 编码器用法
+ffmpeg -h encoder=av1_qsv
+```
 
-mac程序
+
+mac编码程序
 handbrake
