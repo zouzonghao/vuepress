@@ -4,16 +4,16 @@ import sidebar from "./sidebar.js";
 import { cut } from "nodejs-jieba";
 
 export default hopeTheme({
-  hostname: "https://v.343700.xyz",
+  hostname: "https://blog.343700.xyz",
 
   author: {
     name: "三七",
-    url: "https://v.343700.xyz",
+    url: "https://blog.343700.xyz",
   },
 
   iconAssets: "iconify",
 
-  logo: "/logo.png",
+  logo: "/logo.avif",
 
   repo: "zouzonghao/vuepress",
 
