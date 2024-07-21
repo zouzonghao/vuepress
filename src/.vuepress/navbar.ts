@@ -2,6 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
+  "/diary/",
 //  "/demo/",
   {
     text: "文章",
@@ -48,7 +49,7 @@ export default navbar([
     //   },
     // ],
   },
-  "/diary/",
+
   // {
   //   text: "V2 文档",
   //   icon: "book",
