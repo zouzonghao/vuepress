@@ -6,5 +6,5 @@ icon: simple-icons:readdotcv
 
 ---
 
-<Catalog :level="2" />
+<Catalog :level="1" />
 
