@@ -5,5 +5,5 @@ article: false
 icon:
 ---
 
-<Catalog :level="1" />
+<Catalog :level="2" />
 
