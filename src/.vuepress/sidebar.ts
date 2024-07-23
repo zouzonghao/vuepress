@@ -6,13 +6,40 @@ export default sidebar({
   // "/posts/mac/": "structure",
   "/": [
     "",
+    // {
+    //   text: "归档",
+    //   icon: "book",
+    //   prefix: "diary/",
+    //   //可点击
+    //   link: "diary/",
+    //   children: "structure",
+    //   expanded: true,
+    //   collapsible: false
+    // },
     {
       text: "归档",
-      icon: "book",
+      icon: "/svg/book.svg",
       prefix: "diary/",
       //可点击
       link: "diary/",
-      children: "structure",
+      children: [
+        {
+          text: "2023年",
+          icon: "/svg/double-arrow-down.svg",
+          prefix: "2023/",
+          //可点击
+          link: "2023/",
+          children: "structure",
+        },
+        {
+          text: "2024年",
+          icon: "/svg/double-arrow-down.svg",
+          prefix: "2024/",
+          //可点击
+          link: "2024/",
+          children: "structure",
+        },
+      ],
       expanded: true,
       collapsible: false
     },

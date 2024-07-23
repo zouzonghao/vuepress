@@ -2,7 +2,6 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/diary/",
 //  "/demo/",
   {
     text: "文章",
@@ -49,7 +48,7 @@ export default navbar([
     //   },
     // ],
   },
-
+  "/diary/",
   // {
   //   text: "V2 文档",
   //   icon: "book",
@@ -57,12 +56,13 @@ export default navbar([
   // },
   {
     text: "时间轴",
-    icon: "simple-line-icons:clock",
+    //icon: "simple-line-icons:clock",hgi-twotone hgi-time-04
+    icon: "hugeicons:time-04",
     link: "/timeline/",
   },
   {
     text: "图标库",
-    icon: "material-symbols-light:shop-outline",
+    icon: "streamline:smiley-happy",
     link: "https://icon-sets.iconify.design/",
   },
 ]);

@@ -3,6 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 import { cut } from "nodejs-jieba";
 
+
 export default hopeTheme({
   hostname: "https://blog.343700.xyz",
 
@@ -12,7 +13,7 @@ export default hopeTheme({
   },
 
   iconAssets: "iconify",
-
+  favicon: "/logo.avif",
   logo: "/logo.avif",
 
   repo: "zouzonghao/vuepress",
@@ -33,7 +34,7 @@ export default hopeTheme({
   blog: {
     description: "生命折腾不止",
     intro: "/intro.html",
-    excerptLength: 0,
+
     // medias: {
     //   Baidu: "https://example.com",
     //   BiliBili: "https://example.com",
@@ -91,6 +92,7 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+
    // searchPro: true,
     searchPro: {
       // 索引全部内容
