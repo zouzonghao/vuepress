@@ -8,7 +8,7 @@ heroAlt: 123
 heroText: 三七 's 小站
 heroFullScreen: true
 tagline: Careful, serious, and hardworking
-bgImage: https://i.730307.xyz/202407201742179.avif
+bgImage: https://i.730307.xyz/202410311638880.avif # https://i.730307.xyz/202407201742179.avif
 type: order
 # bgImageStyle: 'background-size: cover; background-position: center; background-repeat: no-repeat; filter: blur(3px)'
 # projects:
