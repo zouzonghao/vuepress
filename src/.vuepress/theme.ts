@@ -11,7 +11,7 @@ export default hopeTheme({
     name: "三七",
     url: "https://blog.343700.xyz",
   },
-
+  pure: false,
   iconAssets: "iconify",
   favicon: "/logo.avif",
   logo: "/logo.avif",
