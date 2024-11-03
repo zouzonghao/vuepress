@@ -1,5 +1,6 @@
 import { defineClientConfig } from "vuepress/client";
 import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentNavbar.js";
+import { defineGiscusConfig } from '@vuepress/plugin-comment/client'
 
 
 export default defineClientConfig({
