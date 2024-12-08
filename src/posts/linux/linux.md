@@ -729,28 +729,66 @@ docker run -d --name ddns-go --restart=always -p 9876:9876 -v /Users/macm2/Deskt
 
 ## 12、filebrowser
 
-Linux:
 
-```
-docker run   -d --restart=always\
-    -v /home/zzh/桌面/filebrowser:/srv \
-    -p 44433:80 \
-	--name filebrowser \
-    filebrowser/filebrowser
-    
+### 1. 创建目录
+
+```sh
+mkdir -p /root/docker/filebrowser
+cd /root/docker/filebrowser
 ```
 
-vps
+### 2. 创建临时容器，用于导出配置文件和数据库
+```sh
+docker run -d --name=filebrowser filebrowser/filebrowser
+ 
+docker cp filebrowser:/.filebrowser.json ./filebrowser.json
+docker cp filebrowser:/database.db ./database.db
+
+docker stop filebrowser
+docker rm filebrowser
+```
+
+### 3. 创建 docker-compose.yml
 
 ```
-docker run   -d --restart=always\
-    -v /docker/filebrowser:/srv \
-    -p 12345:80 \
-	--name filebrowser \
-    filebrowser/filebrowser
+version: '3'
+services:
+      
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: filebrowser
+    restart: always
+    volumes:
+      - /:/srv  # 映射主机的根目录到filebrowser的根目录中（危险操作）
+      - ./database.db:/database.db
+      - ./filebrowser.json:/.filebrowser.json
+    environment:
+      - PUID=$(id -u)
+      - PGID=$(id -g)
+    ports:
+      - 80:80    
 ```
 
-在浏览器中打开`http://主机IP:12345`，修改你的配置，成功
+### 4. 启动
+```sh
+docker compose up -d 
+docker compose logs -f
+docker compose down
+```
+
+### 5. nginx 根据路径反向代理
+
+修改`filebrowser.json`
+```json
+{
+  "port": 80,
+  "baseURL": "/filebrowser",
+  "address": "",
+  "log": "stdout",
+  "database": "/database.db",
+  "root": "/srv"
+}
+```
 
 ## 13、ZSH
 
